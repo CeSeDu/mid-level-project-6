@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,44 +12,45 @@
             padding: 0;
             margin: 0;
         }
+      
     </style>
 </head>
 
-<body>
-    <div class="container mx-auto justify-center items-center">
+<body class="overflow-x-hidden">
+    <div class="mx-auto justify-center items-center">
         <!--NAVBAR START-->
-        <nav class="flex  mt-5 items-center justify-between border-b p-3 px-0 border-gray-50 flex-wrap">
-            <div class="logo font-extrabold text-lg ms-0 text-purple-900">NFTERS</div>
+        <nav class="flex  mt-5 items-center justify-around border-b p-3  border-gray-50 flex-wrap ">
+            <div class="logo font-extrabold text-2xl  ms-0 text-purple-900">NFTERS</div>
             <div class="line border-s-2 border-gray-50 w-2 h-10"> </div>
             <div class="items">
-                <ul class="flex flex-wrap items-center justify-center ps-0 ms-0 gap-10">
-                    <li>Marketplace</li>
-                    <li>Resource</li>
-                    <li>About</li>
+                <ul class="md:flex flex-wrap items-center justify-center ps-0 ms-0 gap-10 hidden">
+                    <li class="cursor-pointer">Marketplace</li>
+                    <li class="cursor-pointer">Resource</li>
+                    <li class="cursor-pointer">About</li>
                 </ul>
             </div>
             <div
-                class="search__container items-center justify-center border border-gray-400 rounded-full p-2  px-5 flex flex-nowrap">
-                <input type="text" placeholder="Search" class="outline outline-none">
+                class="search__container items-center justify-center border border-gray-400 rounded-full p-2 hidden md:flex px-5 flex-nowrap">
+                <input type="text" placeholder="Search" class="outline outline-none ">
                 <i class="fa-solid fa-magnifying-glass text-gray-900"></i>
             </div>
             <div class="button__container items-center justify-center flex flex-wrap gap-7 me-0">
-                <button class="bg-purple-900 text-white border border-purple-700 rounded-full p-2 px-5">Upload</button>
-                <button class="text-purple-900 border border-purple-900 rounded-full p-2 px-5">Connect Wallet</button>
+                <button class="bg-purple-900 text-white border border-purple-700 rounded-full md:p-2 md:px-5 p-1 px-2">Upload</button>
+                <button class="text-purple-900 border border-purple-900 rounded-full md:p-2 md:px-5 p-1 px-2">Connect Wallet</button>
             </div>
         </nav>
-        <!--NAvbar End-->
+        <!--Navbar End-->
 
         <!--Header Start-->
-        <header class="container  flex flex-wrap  justify-between my-20  box-border ">
-            <div class="header__title__container grid justify-around items-start">
-                <h1 class="text-5xl uppercase font-extrabold">Discover, and collect <br> Digital Art NFTs </h1>
-                <small>Digital marketplace for crypto collectibles and non-fungible tokens (NFTs). <br> Buy, Sell, and
+        <header class=" md:flex-nowrap flex-wrap justify-center flex md:justify-around my-20 mx-0  box-border gap-12">
+            <div class="header__title__container grid md:justify-around items-start ms-0 lg:-ms-36 gap-10 justify-center order-1 ">
+                <h1 class="md:text-5xl text-2xl uppercase font-extrabold text-center md:text-start ">Discover, and collect <br> Digital Art NFTs </h1>
+                <small class="text-center md:text-start">Digital marketplace for crypto collectibles and non-fungible tokens (NFTs). <br> Buy, Sell, and
                     discover exclusive digital assets.</small>
-                <div class="bg-no-repeat px-10 grid gap-8" style="background-image: url('./images/Dot\ \(1\).jpg');">
-                    <button class="bg-purple-900 text-white border border-purple-700 rounded-full w-44 h-12">Explore
+                <div class="bg-no-repeat md:px-10 grid gap-8 justify-center md:justify-start" style="background-image: url('./images/Dot\ \(1\).jpg');">
+                    <button class="bg-purple-900 text-white border border-purple-700 rounded-full w-28 h-10  md:w-44 md:h-12">Explore
                         Now</button>
-                    <div class="header__number__container flex gap-8">
+                    <div class="header__number__container flex gap-8 justify-center md:justify-start">
                         <div class="number__item text-2xl font-bold">
                             <h1>98k+</h1>
                             <small>Artwork</small>
@@ -63,14 +65,12 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
-            <div class="header__image__container flex me-20 ">
-                <img class="absolute md:ms-40 mt-20" src="./images/unsplash_tZCrFpSNiIQ.png" alt="">
-                <img class="absolute md:ms-20 mt-10" src="./images/unsplash_pVoEPpLw818 (1).png" alt="">
-                <div class="w-full h-full relative"
-                    style="background-image: url('./images/unsplash_E8Ufcyxz514.png');  width: 400px; height:440px;">
+            <div class="header__image__container flex  md:order-2">
+                <img class="absolute lg:ms-40 mt-20" src="./images/unsplash_tZCrFpSNiIQ.png" alt="">
+                <img class="absolute lg:ms-20 mt-10" src="./images/unsplash_pVoEPpLw818 (1).png" alt="">
+                <div class="w-full h-full relative "
+                    style="background-image: url('./images/unsplash_E8Ufcyxz514.png');  width: 400px; height:440px; ">
                     <div class="grid justify-start p-5 gap-3">
                         <h3 class="text-2xl text-white">Abstr Gradient NFT</h3>
                         <div class="flex gap-3 text-white items-center">
@@ -78,7 +78,7 @@
                             <div>Arkhan17</div>
                         </div>
                     </div>
-                    <div class="bg-red-100 p-0 w-20 h-20 rounded-full relative md:top-24 md:-start-8">
+                    <div class="bg-red-100 p-0 w-20 h-20 rounded-full relative md:top-24 md:-start-12">
                         <i class="absolute ps-8 mt-6 text-2xl fa-brands fa-ethereum rotate-12"></i>
                         <svg xmlns="http://www.w3.org/2000/svg" xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink"
                             viewBox="50 50 400 500">
@@ -100,10 +100,6 @@
                         </svg>
 
                     </div>
-
-
-
-
                     <div class="flex mt-32 m-2 rounded-xl p-4 bg- text-white bg-opacity-20 justify-around bg-white">
                         <div class="card__left__item__container grid gap-3">
                             <small class="text-xs">Current Bid</small>
@@ -120,20 +116,153 @@
 
         </header>
 
+        <!--İnfo Section Start-->
+        <section class="bg-gray-100 md:flex grid  justify-around py-24 gap-10 ms-0 lg:-ms-12">
+            <h1 class="text-4xl font-extrabold">The amazing NFT art <br> of the world here</h1>
+
+            <div class="grid gap-3">
+                <div class="flex items-center gap-3 text-2xl font-extralight">
+                    <i class="fa-regular fa-credit-card -ms-8"></i>
+                    <h1 class="font-bold ">Fast Transaction</h1>
+                </div>
+                <small>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. Aliquam <br> etiam viverra tellus imperdiet.</small>          
+            </div>
+            <div>
+                <div class="grid gap-3">
+                    <div class="flex items-center gap-3 text-2xl font-extralight">
+                        <i class="fa-regular fa-credit-card -ms-8"></i>
+                        <h1 class="font-bold ">Fast Transaction</h1>
+                    </div>
+                    <small>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Aliquam etiam viverra tellus</small>          
+                </div>
+
+        </section>
+
+        <!--Start of collection section-->
+
+            <article class="flex flex-wrap justify-center md:justify-around gap-10 py-20">
+                <div class="main grid gap-5">
+                    <img src="./images/unsplash_F56Y7dgrAkc.jpg" alt="">
+                    <div class="flex justify-between px-5">
+                        <div class="flex ">
+                            <img class="" src="./images/Ellipse 95.jpg" alt="">
+                            <div>
+                                <h3>The Futr Abstr</h3>
+                                <small>10 in the stock</small>
+                            </div>
+                      
+                        </div>
+                        <div>
+                            <small>Highest Bid</small>
+                            <div><i class="fa-brands fa-ethereum"></i> 0.25 ETH</div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="grid gap-5 md:border-e-2 md:pe-32 ">
+                    <div class="flex gap-5">
+                        <img class="" src="./images/unsplash_8uZPynIu-rQ.png" alt="">
+                        <div class="gap-1 grid">
+                        <h3>The Futr Abstr</h3>
+                        <div class="flex gap-2 items-center">
+                            <img src="./images/Ellipse 95.jpg" alt="">
+                            <div class="text-sm border border-green-500 text-green-500  flex h-8 w-24 p-1 px-2 items-center rounded-lg"><i class="fa-brands fa-ethereum"></i> 0.25 ETH</div>
+                            <small class="text-xs w-16">1 of 8</small>
+                        </div>
+                        <button class="border-purple-900 rounded-full border w-32 hover:bg-purple-900 hover:text-white h-10">Place a bid</button>
+                        </div>
+                    </div>      
+                    
+                    <div class="flex gap-5">
+                        <img class="" src="./images/unsplash_Tyg0rVhOTrE.png" alt="">
+                        <div class="gap-1 grid">
+                        <h3>The Futr Abstr</h3>
+                        <div class="flex gap-2 items-center">
+                            <img src="./images/Ellipse 95.jpg" alt="">
+                            <div class="text-sm border border-green-500 text-green-500  flex h-8 w-24 p-1 px-2 items-center rounded-lg"><i class="fa-brands fa-ethereum"></i> 0.25 ETH</div>
+                            <small class="text-xs w-16">1 of 8</small>
+                        </div>
+                        <button class="border-purple-900 rounded-full border w-32 hover:bg-purple-900 hover:text-white h-10">Place a bid</button>
+                        </div>
+                    </div>        
+                    <div class="flex gap-5">
+                        <img class="" src="./images/unsplash_wHJ5L9KGTl4.png" alt="">
+                        <div class="gap-1 grid">
+                        <h3>The Futr Abstr</h3>
+                        <div class="flex gap-2 items-center">
+                            <img src="./images/Ellipse 95.jpg" alt="">
+                            <div class="text-sm border border-green-500 text-green-500  flex h-8 w-24 p-1 px-2 items-center rounded-lg"><i class="fa-brands fa-ethereum"></i> 0.25 ETH</div>
+                            <small class="text-xs w-16">1 of 8</small>
+                        </div>
+                        <button class="border-purple-900 rounded-full border w-32 hover:bg-purple-900 hover:text-white h-10">Place a bid</button>
+                        </div>
+                    </div>   
+                </div>
+                <aside class="grid md:justify-center justify-between items-center gap-5 md:-ms-52">
+                    <h1 class="font-bold text-2xl">Top Collections over </h1>
+                    <h5>Last 7 days</h5>
+                    <div class="flex justify-between items-center gap-5"> 
+                        <h1>1</h1>
+                        <div class="flex relative">
+                            <img  src="./images/unsplash_k0rVudBoB4c.png" alt="">
+                            <img class="absolute end-0 -me-1" src="./images/verify 1.png" alt="">
+                        </div>
+                        <div class="text-xs grid items-center" >
+                            <h4>CryptoFunks</h4>
+                            <div><i class="fa-brands fa-ethereum"></i> 0.25 ETH</div>   
+                        </div>
+                        <h3 class="text-green-400">+26.52%</h3>
+                    </div>
+                    <div class="flex justify-between items-center gap-5"> 
+                        <h1>2</h1>
+                        <img src="./images/unsplash_fT49QnFucQ8.png" alt="">
+
+                        <div class="text-xs grid items-center" >
+                            <h4>CryptoFunks</h4>
+                            <div><i class="fa-brands fa-ethereum"></i> 0.25 ETH</div>   
+                        </div>
+                        <h3 class="text-red-400">+10.52%%</h3>
+                    </div>
+                    <div class="flex justify-between items-center gap-5"> 
+                        <h1>3</h1>
+                        <img src="./images/unsplash_5MTf9XyVVgM.png" alt="">
+
+                        <div class="text-xs grid items-center" >
+                            <h4>CryptoFunks</h4>
+                            <div><i class="fa-brands fa-ethereum"></i> 0.25 ETH</div>   
+                        </div>
+                        <h3 class="text-green-400">+2.52%</h3>
+                    </div>
+                    <div class="flex justify-between items-center gap-5"> 
+                        <h1>4</h1>
+                        <div class="flex relative">
+                            <img  src="./images/unsplash_zkNT5mikUuo.png" alt="">
+                            <img class="absolute end-0 -me-1" src="./images/verify 1.png" alt="">
+                        </div>
+
+                        <div class="text-xs grid items-center" >
+                            <h4>CryptoFunks</h4>
+                            <div><i class="fa-brands fa-ethereum"></i> 0.25 ETH</div>   
+                        </div>
+                        <h3 class="text-green-400">+1.52%</h3>
+                    </div>
+                    <div class="flex justify-between items-center gap-5"> 
+                        <h1>5</h1>
+                        <img src="./images/unsplash_WjIB-6UxA5Q.png" alt="">
+
+                        <div class="text-xs grid items-center" >
+                            <h4>CryptoFunks</h4>
+                            <div><i class="fa-brands fa-ethereum"></i> 0.25 ETH</div>   
+                        </div>
+                        <h3 class="text-green-400">+2.52%</h3>
+                    </div>
+                </aside>
+            </article>
+
+         
 
 
 
-
-
-
-
-
-
-
-
-
-        <section></section>
-        <article></article>
         <section></section>
         <main></main>
         <article></article>
